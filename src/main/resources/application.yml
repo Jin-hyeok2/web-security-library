@@ -1,0 +1,32 @@
+security:
+  policy:
+    permitAllUri:
+      - /v2/**
+      - /v1/sign-in
+      - /v1/sign-up
+    servletPrefix: ${spring.mvc.servlet.path}
+  jwt:
+    accessToken:
+      secretKey: helloWorld,access!
+      expirationTimeMinute: 5
+    refreshToken:
+      secretKey: helloWorld,refresh!
+      expirationTimeMinute: 10
+  encoderSecret: helloWorldEncoderKey1234
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/practice?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: root
+    password: 1q2w3e4r
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+  mvc:
+    servlet:
+      path: /api
+

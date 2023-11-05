@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "security.policy.permitAllUri",
+      "type": "java.lang.String",
+      "description": "Description for security.policy.permitAllUri."
+    },
+    {
+      "name": "security.policy.servletPrefix",
+      "type": "java.lang.String",
+      "description": "Description for security.policy.servletPrefix."
+    }
+  ] }
