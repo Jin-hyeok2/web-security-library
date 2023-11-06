@@ -1,12 +1,10 @@
 package com.example.websecurity.config
 
 import com.example.websecurity.filter.JwtAuthenticationFilter
-import com.example.websecurity.status.Role
 import com.example.websecurity.utiliy.JwtUtility
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpMethod
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
